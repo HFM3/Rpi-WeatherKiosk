@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"/>
+	<META HTTP-EQUIV="EXPIRES" CONTENT="0"/>
+	
+	<title id="title">weather</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/skycons.js"></script>
+	
+</head>
+
+<body>
+		
+	<div style="float: left; width: 30%;">
+		<table border="0" id="hereNow">
+			<caption id="location" class="location">&nbsp;</caption>
+			<tr>
+				<td id="currentlySummary">&nbsp;</td>
+			</tr>
+				<tr>
+					<td id="currentlyIconTD"><canvas id="currentlyIcon" class="clear-day" width="200" height="200"></td>
+				</tr>
+				<tr>
+					<td id="minutelySummary">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="todayTemps">
+						<span id="todayTempMinTime">&nbsp;</span>
+						<span id="todayTempMin">&nbsp;</span>
+						<span id="currentTemp">&nbsp;</span>
+						<span id="todayTempMax">&nbsp;</span>
+						<span id="todayTempMaxTime">&nbsp;</span>
+					</td>
+				</tr>
+				<tr>
+					<td id="currentlyFeelsLikeTD"><span>&nbsp;</span><span id="currentlyFeelsLike">&nbsp;</span></td>
+				</tr>
+		</table>
+
+		<table border="0">
+			<caption id="hourlySummary">&nbsp;</caption>
+				<tr>
+					<td id="hourly_1_time" class="hourly_time">&nbsp;</td>
+					<td class="hourly_icon"><canvas id="hourly_1_icon" class="clear-day" width="45px" height="45px"></td>
+					<td id="hourly_1_summary" class="hourly_summary">&nbsp;</td>
+					<td id="hourly_1_temp" class="hourly_temp">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="hourly_2_time" class="hourly_time">&nbsp;</td>
+					<td class="hourly_icon"><canvas id="hourly_2_icon" class="clear-day" width="45px" height="45px"></td>
+					<td id="hourly_2_summary" class="hourly_summary">&nbsp;</td>
+					<td id="hourly_2_temp" class="hourly_temp">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="hourly_3_time" class="hourly_time">&nbsp;</td>
+					<td class="hourly_icon"><canvas id="hourly_3_icon" class="clear-day" width="45px" height="45px"></td>
+					<td id="hourly_3_summary" class="hourly_summary">&nbsp;</td>
+					<td id="hourly_3_temp" class="hourly_temp">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="hourly_4_time" class="hourly_time">&nbsp;</td>
+					<td class="hourly_icon"><canvas id="hourly_4_icon" class="clear-day" width="45px" height="45px"></td>
+					<td id="hourly_4_summary" class="hourly_summary">&nbsp;</td>
+					<td id="hourly_4_temp" class="hourly_temp">&nbsp;</td>
+				</tr>
+				<tr>
+					<td id="hourly_5_time" class="hourly_time">&nbsp;</td>
+					<td class="hourly_icon"><canvas id="hourly_5_icon" class="clear-day" width="45px" height="45px"></td>
+					<td id="hourly_5_summary" class="hourly_summary">&nbsp;</td>
+					<td id="hourly_5_temp" class="hourly_temp">&nbsp;</td>
+				</tr>
+		</table>
+	</div>
+	
+	
+	<div style="float: right; width: 30%;">
+		<table border="0">
+			<caption id="dateCaption"><span id="today">&nbsp;</span><br><span id="monthDayYear">&nbsp;</span></caption>
+				<tr>
+					<td><span id="currentHour">&nbsp;</span><span id="currentMinute">&nbsp;</span><span id="currentSecond">&nbsp;</span></td>
+				</tr>
+		</table>
+		<table border="0">
+			<tr>
+				<td class="sunMoon"><canvas class="clear-day" width="30px" height="30px"></td>
+				<td class="sunMoon"><canvas class="clear-night" width="35px" height="35px"></td>
+			</tr>
+			<tr>
+				<td id="sunrise">&nbsp;</td>
+				<td id="moonPhaseTitle">&nbsp;</td>
+			</tr>
+			<tr>
+				<td id="sunset">&nbsp;</td>
+				<td id="moonPhase">&nbsp;</td>
+			</tr>
+		</table>
+		
+		</table>
+		<table border="0" class="future">
+			<tr>
+				<td id="day_1_day">&nbsp;</td>
+				<td id="day_2_day">&nbsp;</td>
+				<td id="day_3_day">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="futureIcons"><canvas id="day_1_icon" class="clear-day" width="60px" height="60px"></td>
+				<td class="futureIcons"><canvas id="day_2_icon" class="clear-day" width="60px" height="60px"></td>
+				<td class="futureIcons"><canvas id="day_3_icon" class="clear-day" width="60px" height="60px"></td>
+			</tr>
+			<tr>
+				<td class="futureMinMax"><span id="day_1_tempMin">&nbsp;</span><span id="day_1_tempMax">&nbsp;</span></td>
+				<td class="futureMinMax"><span id="day_2_tempMin">&nbsp;</span><span id="day_2_tempMax">&nbsp;</span></td>
+				<td class="futureMinMax"><span id="day_3_tempMin">&nbsp;</span><span id="day_3_tempMax">&nbsp;</span></td>
+			</tr>
+			<tr>
+				<td id="dailySummary" colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		
+		<table  border="0" class="alerts">
+			<caption id="alertTitle"></caption>
+			<tr>
+				<td id="alertDesc"></td>
+			</tr>
+		
+		</table>
+	
+	</div>	
+	
+	
+	<script src="js/updateTime.js"></script>
+	<script src="js/getWeather.js"></script>
+
+</body>
+
+
+</html>

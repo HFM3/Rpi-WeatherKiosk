@@ -1,0 +1,238 @@
+*{
+	font-family: Roboto Light;
+	color: white;
+	cursor: none;
+	
+}
+
+#hereNow{
+	width: 80%;
+}
+
+.location{
+	padding-top: 30px;
+	padding-bottom: 0px;
+	font-family: Roboto;
+	text-transform: capitalize;
+	font-size: 45px;
+}
+
+#currentlySummary{
+	font-size: 25px;
+	text-transform: capitalize;
+	text-align: center;
+	padding-bottom: 5px;
+
+}
+
+#currentlyIconTD{
+	text-align: center;
+}
+
+#currentlyIcon{
+	padding-top:5px;
+	padding:10px;
+	vertical-align: middle;
+}
+
+#minutelySummary{
+	font-family: Roboto;
+	text-transform: capitalize;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 0px;
+	padding: 10px;
+}
+
+#todayTemps{
+	text-align: center;
+	padding-top: 5px;
+}
+#todayTempMin, #todayTempMax{
+	font-size: 35px;
+}
+
+#currentTemp{
+	font-family: Roboto;
+	font-size: 55px;
+}
+
+#todayTempMinTime, #todayTempMaxTime{
+	text-transform: lowercase;
+	font-size: 12px;
+}
+
+#currentlyFeelsLikeTD{
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	
+}
+
+#hourlySummary{
+	font-family: Roboto;
+	text-transform: capitalize;
+	font-size: 29px;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.hourly_time{
+	text-transform: lowercase;
+	font-size: 25px;
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.hourly_icon{
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+.hourly_summary{
+	text-transform: capitalize;
+	font-size: 25px;
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.hourly_temp{
+	text-transform: uppercase;
+	font-size: 25px;
+	text-align: right;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.future{
+	width: 80%;
+}
+
+#dateCaption{
+	text-align: center;
+	padding-top: 30px;
+}
+
+#today{
+	font-family: Roboto;
+	text-transform: capitalize;
+	font-size: 45px;
+}
+
+#monthDayYear{
+	text-transform: capitalize;
+	font-size: 30px;
+}
+
+#currentHour{
+	font-family: Roboto;
+	font-size: 85px;
+	padding-left: 50px;
+}
+
+#currentMinute{
+	font-family: Roboto;
+	font-size: 85px;
+	padding-right: 50px;
+}
+
+#currentSecond{
+	font-size: 20px;
+	font-style: italic;
+/*
+	padding-right: 50px;
+*/
+	display: none;
+}
+
+.sunMoon{
+	padding: 3px;
+	text-align: center;
+}
+
+#sunrise, #sunset{
+	font-size: 20px;
+	text-align: right;
+	text-transform: lowercase;
+}
+
+#moonPhaseTitle{
+	font-family: Roboto;
+	font-size: 22px;
+	text-align: center;
+	padding-left: 10px;
+}
+
+#moonPhase{
+	font-size: 22px;
+	text-align: center;
+	padding-left: 10px;
+}
+
+#day_1_day, #day_2_day, #day_3_day{
+	font-family: Roboto;
+	text-transform: capitalize;
+	font-size: 25px;
+	text-align: center;
+	padding: 3px;
+	padding-top: 20px;
+}
+
+.futureIcons{
+	padding: 3px;
+	text-align: center;
+}
+
+.futureMinMax{
+	font-size: 25px;
+	text-align: center;
+	padding: 5px;
+}
+
+#dailySummary{
+	font-family: Roboto;
+	text-transform: capitalize;
+	font-size: 25px;
+	text-align: center;
+	padding: 10px;
+	padding-top: 22px;
+}
+
+#alertTitle{
+	font-family: Roboto;
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#alertDesc{
+	text-align: left;
+	font-size: 14px;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+body{
+	background-color: black;
+	margin: 0px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
